@@ -48,7 +48,8 @@ html {
 .navigation a {
      padding: 5px;
      margin: 0 30px;
- }
+ } 
+
 
 ul a:hover {
      border-bottom: 2px #D72866 solid;
@@ -361,15 +362,40 @@ main .container {
     grid-area: b;
     list-style: none;
     width: 500px;
-    height: 600px;
-    margin: 20px auto;
+    height: 700px;
+    margin: 10px auto;
     margin-left: 90px;
     color: #000;
-    padding: 20px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22)
 }
 
-.myskills li {
+.navn {
+    font-weight: 400;
+    font-size: 40px;
+    color: #D72866;
+    margin-bottom: -10px;
+
+}
+.multimedie {
+    font-weight: 200;
+    font-size: 15;
+    color:rgb(152, 152, 152);
+    font-style: italic;
+}
+
+.story {
+    margin-top: 10px;
+    font-weight: 200;
+    font-size: 15px;
+
+}
+
+
+.fordig {
+    font-weight: 300;
+    font-size: 20px;
+    color: #D72866;
+}
+/* .myskills li {
     margin: 20px 0;
     padding: 10px;
 }
@@ -424,7 +450,7 @@ main .container {
 .xd {
     width: 60%;
     animation: xd 3s;
-}
+} */
 
 @keyframes html {
     0% {
@@ -596,10 +622,7 @@ main .kontakt {
 }
 
 @media (max-width : 991px) {
-    nav {
-        display: none;
-    }
-
+    
 
     .sectionkontakt {
         background: #CFE6D9;
@@ -647,18 +670,24 @@ main .kontakt {
     footer .email  {
         grid-area: b;
         text-align: center;
+        padding-top: 30px;
     }
 
     footer .email a {
-        padding-left: 30px;
+        padding-left: 60px;
     }
 
     footer .telefon {
         grid-area: e;
+        padding: 20px 0 20px 0;
     }
     
     footer .lokation {
         grid-area: h;
+    }
+
+    .copyright {
+        text-align: center;
     }
 
 }
@@ -673,7 +702,4 @@ main .kontakt {
         flex-direction: column;
         align-items: flex-start;
     }
-
-    
-
 }
