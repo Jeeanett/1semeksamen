@@ -174,7 +174,8 @@ section {
 .billede {
     align-items: flex-end;
     height: 580px;
-    width: 510px
+    width: 510px;
+    margin-left: 50px;
 }
 .fade-in-image {
     grid-area: b;
@@ -527,13 +528,13 @@ main .containerkompetencer {
     font-weight: 400;
     font-size: 40px;
     color: #D72866;
-    margin-bottom: -10px;
+    margin-bottom: -5px;
 
 }
 .multimedie {
     font-weight: 200;
     font-size: 15;
-    color:rgb(152, 152, 152);
+    color:rgb(130, 129, 129);
     font-style: italic;
 }
 
@@ -552,7 +553,7 @@ main .containerkompetencer {
     font-weight: 300;
     font-style: italic;
     text-align: center;
-    color: #aeaeae;
+    color:rgb(130, 129, 129);
 }
 
 .fordig {
@@ -738,7 +739,6 @@ main .kontakt {
 
 .lokationlogo  {
     grid-area: g;
-    
 }
 
 .lokationodense {
