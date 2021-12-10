@@ -16,16 +16,14 @@ html {
      color: #000;
  }
 
-
+/* ---------FORSIDE---------- */
  .grid {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
     gap: 20px;
     justify-content: center;
     align-items: center;
-    height: auto;
-    grid-template-rows: auto 0;
-    grid-template-columns: 600px;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto;
     grid-template-areas: 
     "t b";
 }
@@ -120,7 +118,7 @@ h1 {
     font-size: 60px;
     font-weight: 300;
 }
-.hi {
+.velkommen {
     font-size: 16px;
 }
 .designer {
@@ -175,6 +173,8 @@ section {
 
 .billede {
     align-items: flex-end;
+    height: 580px;
+    width: 510px
 }
 .fade-in-image {
     grid-area: b;
@@ -209,7 +209,6 @@ footer a{
     margin-left: -30px;
 }
 
-
 .copyright {
     text-align: center;
     font-weight: 300;
@@ -221,7 +220,101 @@ footer a{
     position: absolute;
     top: 0px
 }
+@media screen and (max-width:800px) {
+    .billede {
+        align-items: flex-end;
+        height: 480px;
+        width: 440px;
+       
+    }
 
+    .grid {
+        padding: 0px;
+        align-items: start;
+        margin-top: 40px;
+    }
+}
+
+
+@media screen and (max-width:700px) {
+    
+    h1 {
+        font-size: 40px;
+        font-weight: 300;
+    }
+    .velkommen {
+        font-size: 15px;
+    }
+    .designer {
+        font-size: 15px;
+    }
+    .nurse {
+        font-size: 12px;
+    }
+    .grid {
+        padding: 0px;
+        align-items: start;
+        margin-top: 40px;
+    }
+
+    .billede {
+        align-items: flex-end;
+        height: 380px;
+        width: 340px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .grid {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "b" 
+        "k";
+        justify-content: space-evenly;
+        justify-items: stretch;
+        margin: 0;
+    }
+
+    .tekstbox {
+        grid-area: k;
+        padding: 0px;
+        margin: 0;
+    }
+    .billede {
+        grid-area: b;
+        align-items: flex-end;
+        height: 380px;
+        width: 340px;
+    }
+    .portfolie {
+        margin: 20px;
+        left: 25%;
+    }
+    
+    h1 {
+        font-size: 40px;
+        font-weight: 300;
+        text-align: center;
+    }
+    .velkommen {
+        font-size: 20px;
+        text-align: center;
+    }
+    .designer {
+        font-size: 15px;
+        text-align: center;
+    }
+    .nurse {
+        font-size: 12px;
+        text-align: center;
+    }
+
+} 
+
+/* ------- MEDIA QUERIES FOR BURGER MENU ---------- */
 @media screen and (max-width:800px) {
     nav .links {
         float: none;
@@ -279,6 +372,7 @@ main .portfolio {
     text-align: center;
     font-weight: 200;
     font-size: 15px;
+    padding: 20px;
 }
 
  .foto-galleri {
@@ -374,7 +468,9 @@ main .portfolio {
       transition: all 0.3s 0.2s ease;
   }
 
-  @media (max-width:768px) {
+  
+
+  @media screen and (max-width:768px) {
     .foto-galleri {
         grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
         grid-auto-rows: 250px;
@@ -390,7 +486,7 @@ main .portfolio {
 
   /* -------- OM MIG ----------- */
 .bodyommig {
-    background-image: url('baggrund.jpg');
+    background-image: url('billeder/baggrund.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 200px;
@@ -411,16 +507,10 @@ main .containerkompetencer {
 }
 .jeaskov {
     grid-area: k;
-    z-index: 1;
     align-self: center;
     justify-self: center;
-}
-main .container {
-    grid-area: k;
-    margin-top: 450px;
-    margin-left: 80px;
-    padding: 10px 10px 10px 10px;
-
+    height: 400px;
+    width: 400px;
 }
 
 .myskills {
@@ -477,21 +567,75 @@ main .container {
 
 .kontaktknap {
     text-decoration: none;
-    color: #000;
-    border: 1px solid #fff;
+    color: #fff;
+    border: 1px solid #D72866;
     padding: 12px 34px;
     font-size: 15px;
-    background: #CFE6D9;
+    background: #D72866;
     position: relative;
     cursor: pointer;
     }
 .kontaktknap:hover {
-    border: 1px solid #CFE6D9;
-    background: #D72866;
-    color: #fff;
+    border: 1px solid #fff;
+    background: #fff;
+    color: #000;
     transition: 0.5s;
     }
 
+
+@media screen and (max-width:982px)  {
+    main .containerkompetencer {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 600px;
+        grid-template-areas: 
+        "b" 
+        "k";
+        justify-content: space-evenly;
+        justify-items: stretch;
+    }
+    .myskills {
+        grid-area: k;
+        list-style: none;
+        width: 550px;
+        height: 700px;
+        margin: 10px auto;
+        margin-left: 20px;
+        color: #000;
+        margin-top: -150px;
+    }
+    .jeaskov {
+        grid-area: b;
+        align-self: center;
+        justify-self: center;
+        margin-top: -200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .myskills {
+        grid-area: k;
+        list-style: none;
+        width: 354px;
+        height: auto;
+        margin: 10px auto;
+        margin-left: 20px;
+        color: #000;
+        margin-top: -150px;
+    }
+    .jeaskov {
+        height: 60%;
+        width: 95%;
+    }
+
+    .fordig {
+        font-size: 19px;
+        margin-top: 20px;
+        font-weight: 200;
+    }
+
+}
 
 /* -------- KONTAKT ----------- */
 
@@ -605,7 +749,8 @@ main .kontakt {
     position: relative;
 }
 
-@media (max-width : 1200px) {
+
+@media screen and (max-width : 1200px) {
     .kontaktcontainer {
         width: 80%;
         min-width: auto;
@@ -619,8 +764,7 @@ main .kontakt {
     }
 }
 
-@media (max-width : 991px) {
-    
+@media screen and (max-width : 991px) {
 
     .sectionkontakt {
         background: #CFE6D9;
@@ -645,7 +789,7 @@ main .kontakt {
         display: flex;
         width: 100%;
         height: auto;  
-        top: -20px
+        top: -20px;
     }
     .insta {
         margin-top: 15px;
@@ -690,7 +834,7 @@ main .kontakt {
 
 }
 
-@media (max-width : 650px) {
+@media screen and (max-width : 650px) {
     .kontaktcontainer .kontaktform {
         padding: 25px;
     }
