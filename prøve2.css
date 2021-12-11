@@ -116,16 +116,19 @@ nav .icon-burger .line {
 
 h1 {
     font-size: 60px;
-    font-weight: 300;
+    font-weight: 200;
+    text-align: center;
 }
-.velkommen {
-    font-size: 16px;
-}
+
 .designer {
-    font-size: 20px;
+    font-size: 27px;
+    font-weight: 200;
+    text-align: center;
 }
 .nurse {
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
 }
 
 .portfolie {
@@ -139,6 +142,7 @@ h1 {
     background: #D72866;
     position: relative;
     cursor: pointer;
+    left: 40%;
 }
 .portfolie:hover {
     border: 1px solid #CFE6D9;
@@ -560,10 +564,43 @@ main .containerkompetencer {
     font-weight: 100;
     font-size: 40px;
     text-align: center;
+    padding-top: 30px;
 }
 
+#kompetencer{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
 .kompetencer {
-    margin: 40px 0 70px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 5% 8% 5% 8%;
+}
+.kompetencer h1 {
+ font-weight: 100;
+ font-size: 30px;
+}
+.kompetencer p {
+    font-weight: 200;
+    font-size: 17px;
+    color: #d7286587;
+    font-style: italic;
+}
+
+.ikoner {
+    text-align: center;
+}
+.ikoner img {
+    width: 110px;
+    margin-top: 30px;
+}
+
+
+.knap {
+    margin: 80px 0 30px 0;
 }
 
 .kontaktknap {
@@ -651,6 +688,12 @@ main .kontakt {
     align-items: center;
     min-height: 100vh;
     background: #CFE6D9;
+    flex-wrap: wrap;
+}
+.kontaktemig {
+    text-align: center;
+    padding: 15px 15px 15px 15px;
+    font-weight: 300;
 }
 
 .kontaktcontainer {
