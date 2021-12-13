@@ -568,6 +568,7 @@ main .containerkompetencer {
     font-size: 40px;
     text-align: center;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #kompetencer{
@@ -692,6 +693,7 @@ main .kontakt {
     min-height: 100vh;
     background: #CFE6D9;
     flex-wrap: wrap;
+    padding-bottom: 130px;
 }
 .kontaktemig {
     text-align: center;
