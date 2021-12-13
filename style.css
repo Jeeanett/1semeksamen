@@ -75,6 +75,10 @@ nav .icon-burger .line {
     transition: all .3s ease-in-out;
 }
 
+.line {
+    display: block;
+}
+
 
 .kald {
     font-weight: normal;
@@ -93,7 +97,6 @@ nav .icon-burger .line {
  }
 
 .container {
-     max-width: auto;
      height: fit-content;
      margin: 0 auto;
      overflow: auto;
@@ -537,7 +540,7 @@ main .containerkompetencer {
 }
 .multimedie {
     font-weight: 200;
-    font-size: 15;
+    font-size: 15px;
     color:rgb(130, 129, 129);
     font-style: italic;
 }
@@ -579,7 +582,7 @@ main .containerkompetencer {
     text-align: center;
     padding: 5% 8% 5% 8%;
 }
-.kompetencer h1 {
+.kompetencer h4 {
  font-weight: 100;
  font-size: 30px;
 }
@@ -692,8 +695,9 @@ main .kontakt {
 }
 .kontaktemig {
     text-align: center;
-    padding: 15px 15px 15px 15px;
-    font-weight: 300;
+    padding: 30px 15px 15px 15px;
+    font-weight: 200;
+    font-size: 17px;
 }
 
 .kontaktcontainer {
