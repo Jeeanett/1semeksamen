@@ -201,20 +201,12 @@ footer {
     position: relative;
     width: 100%;
     background: #CFE6D9;
-    padding-left: 170px;
-    padding-top: 5px;
-    padding-right: 170px;
+    padding: 5px 170px 20px 170px;
     font-weight: 300;
 }
 
 footer h4 {
-    font-weight: 400;
-}
-footer p{
-    margin-left: -30px;
-}
-footer a{
-    margin-left: -30px;
+    font-weight: 500;
 }
 
 .copyright {
@@ -316,8 +308,12 @@ footer a{
         text-align: center;
     }
     .nurse {
-        font-size: 12px;
+        font-size: 14px;
         text-align: center;
+    }
+
+    footer {
+        justify-content: center;
     }
 
 } 
@@ -379,7 +375,7 @@ main .portfolio {
 .portfoliotekst p{
     text-align: center;
     font-weight: 200;
-    font-size: 15px;
+    font-size: 17px;
     padding: 20px;
 }
 
@@ -540,7 +536,7 @@ main .containerkompetencer {
 }
 .multimedie {
     font-weight: 200;
-    font-size: 15px;
+    font-size: 16px;
     color:rgb(130, 129, 129);
     font-style: italic;
 }
@@ -548,7 +544,7 @@ main .containerkompetencer {
 .story {
     margin-top: 15px;
     font-weight: 200;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .du {
@@ -672,7 +668,7 @@ main .containerkompetencer {
     }
 
     .fordig {
-        font-size: 19px;
+        font-size: 17px;
         margin-top: 20px;
         font-weight: 200;
     }
