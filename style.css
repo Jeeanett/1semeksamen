@@ -286,8 +286,8 @@ footer h4 {
     .billede {
         grid-area: b;
         align-items: flex-end;
-        height: 380px;
-        width: 340px;
+        height: 368px;
+        width: 324px;
     }
     .portfolie {
         margin: 20px;
@@ -545,6 +545,7 @@ main .containerkompetencer {
     margin-top: 15px;
     font-weight: 200;
     font-size: 16px;
+    margin-right: 20px;
 }
 
 .du {
@@ -858,10 +859,6 @@ main .kontakt {
         grid-area: b;
         text-align: center;
         padding-top: 30px;
-    }
-
-    footer .email a {
-        padding-left: 60px;
     }
 
     footer .telefon {
