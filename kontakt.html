@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f7336af5db.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Kontakt</title>
 </head>
@@ -46,38 +47,70 @@
         <h1 class="kontakt">KO<span style="color:#D72866">N</span>TAKT</h1>
     </main>
 
-    <section class="sectionkontakt">
-        <p class="kontaktemig">Du er mere end velkommen til at kontakte mig på enten e-mail, telefon eller sociale medier. <br><br> Jeg glæder mig til at høre fra dig!</p>
-        <div class="kontaktcontainer">
-            <div class="kontaktinfo">
-                <div>
-                    <h2 class="kontaktinformation">Kontakt Info</h2>
+    <section class="contact">
+        <div class="content">
+            <h2>Lad os snakke</h2>
+            <p>Jeg håber besøget på min hjemmeside har været inspirerende, og jeg glæder mig til at høre fra dig.</p>
+        </div>
+        <div class="contactcontainer">
+            <div class="contactinfo">
+                <div class="box">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="text">
+                        <h3>Adresse</h3>
+                        <p>5210 Odense NV</p>
+                    </div>
                 </div>
-
-                <p class="insta">FIND MIG PÅ INSTAGRAM</p>
-
-                <div class="insta">
-                    <a href="https://www.instagram.com/_prettypen" target="_blank"> <img src="billeder/instagram.png" class="instagram" alt="Instagram" width="50" height="50"></a>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                    <div class="text">
+                        <h3>Telefon</h3>
+                        <p>+45 20 78 07 27</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>E-mail</h3>
+                        <p><a href="mailto:jeanett@jeanettjarl.dk">jeanett@jeanettjarl.dk</a></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><a href="https://www.instagram.com/_prettypen" target="_blank"><i class="fab fa-instagram"></i></a></div>
+                    <div class="text">
+                        <h3>Instagram</h3>
+                        <p>PrettyPen</p>
+                    </div>
                 </div>
             </div>
-            <div class="kontaktform">
-                <img src="billeder/email.png" class="emaillogo" alt="email" width="40" height="40">
-                <p class="mail">Mail <br>
-                    <a href="mailto:jeanett@jeanettjarl.dk">jeanett@jeanettjarl.dk</a>
-                </p>
 
-                <img src="billeder/call.png" class="calllogo" alt="telefon" width="40" height="40">
-                <p class="telefonkontakt">Telefon <br>
-                    +45 20780727
-                </p>
-
-                <img src="billeder/location.png" class="lokationlogo" alt="lokation" width="40" height="50">
-                <p class="lokationodense">Lokation <br>
-                    5210 Odense NV
-                </p>
+            <div class="contactform">
+                <h2>Send mig en besked</h2>
+                <div class="inputBox">
+                    <input type="text" name="required" required="required">
+                    <span>Fulde navn</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="required" required="required">
+                    <span>E-mail</span>
+                </div>
+                <div class="inputBox">
+                    <textarea required="required" rows="3" cols="20"></textarea>
+                    <span>Skriv din besked her</span>
+                </div>
+                <div class="inputBox">
+                    <form action="mailto:jeanett@jeanettjarl.dk">
+                    <input type="submit" name="submit" value="Send">
+                    </form>
+                </div>
             </div>
         </div>
+
     </section>
+    
+
+
+
 
 
     <footer>
